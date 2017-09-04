@@ -3,7 +3,7 @@ University Project
 
 We designed and created a smartphone app to control the blinds from an iPhone smartphone.
 
-It has 3 modes of operation: Manual, Automatic, and Eco.
+It has 3 modes of operation: Manual, Automatic and Eco.
 
 The Manual mode gives the user complete control over the Solar e-Blinds, whether it be tilt or roll. This allows the user to manually control the blinds immediately using their iPhone, without having to physically get up and tilt/roll the blinds themselves.
 
