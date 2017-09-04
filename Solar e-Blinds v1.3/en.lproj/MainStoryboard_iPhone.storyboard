@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0ER-Ft-Prm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Home Page-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDu-hJ-HFq">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Proceed">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="M1f-TL-Hgv" kind="push" id="jVm-2J-J9Z"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rI6-kL-noS">
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ETW-rR-5xY">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Solar e-Blinds is a readily implemented window blind system that regulates incoming light and heat to realize energy savings. Electronically sensing changes in sunlight conditions, this innovative product automatically and continuously adjusts your blinds to let in light according to your settings. Whether you live in a hot climate or a cold one, smartBLIND is the perfect ergonomic solution for the regulation of incoming light &amp; heat, achieving significant energy savings through reduction in air conditioning and/or heating costs.                                                          Solar e-Binds is the world's only stand-alone automatic window blind (although it can be integrated with a remote computer). It has a sunlight-sensitive control system hidden within industry standard horizontal blinds. Consisting of a gearhead motor, a photosensor and an electronic feedback control system, smartBLIND turns any window into an intelligent lighting system, noiselessly adjusting the blind slats in tiny increments throughout the day in order to maintain desired interior lighting and regulate heat.</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="Helvetica"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ETW-rR-5xY" firstAttribute="bottom" secondItem="rI6-kL-noS" secondAttribute="bottom" type="default" id="827-Gm-6tI"/>
+                                    <constraint firstItem="ETW-rR-5xY" firstAttribute="centerX" secondItem="rI6-kL-noS" secondAttribute="centerX" type="default" id="RiW-GZ-Cv5"/>
+                                    <constraint firstItem="ETW-rR-5xY" firstAttribute="leading" secondItem="rI6-kL-noS" secondAttribute="leading" type="default" id="X8F-aY-hZM"/>
+                                    <constraint firstItem="ETW-rR-5xY" firstAttribute="centerY" secondItem="rI6-kL-noS" secondAttribute="centerY" type="default" id="XBH-0d-x7d"/>
+                                    <constraint firstItem="ETW-rR-5xY" firstAttribute="trailing" secondItem="rI6-kL-noS" secondAttribute="trailing" type="default" id="jvN-Gk-KxN"/>
+                                    <constraint firstItem="ETW-rR-5xY" firstAttribute="top" secondItem="rI6-kL-noS" secondAttribute="top" type="default" id="phP-Ue-NZl"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Solar e-Blinds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIZ-kJ-dvS">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rI6-kL-noS" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="5Ze-L2-rOJ"/>
+                            <constraint firstItem="XIZ-kJ-dvS" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="CqJ-hd-QXf"/>
+                            <constraint firstAttribute="bottom" secondItem="rI6-kL-noS" secondAttribute="bottom" constant="80" id="DkQ-wd-Qmq"/>
+                            <constraint firstItem="XIZ-kJ-dvS" firstAttribute="centerX" secondItem="rI6-kL-noS" secondAttribute="centerX" type="default" id="ccA-ge-ghw"/>
+                            <constraint firstItem="rI6-kL-noS" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="dJn-lN-3Sb"/>
+                            <constraint firstItem="rI6-kL-noS" firstAttribute="top" secondItem="3" secondAttribute="top" constant="76" id="fD6-X2-Wht"/>
+                            <constraint firstItem="rI6-kL-noS" firstAttribute="centerX" secondItem="VDu-hJ-HFq" secondAttribute="centerX" type="default" id="i91-Yn-Vzn"/>
+                            <constraint firstAttribute="bottom" secondItem="VDu-hJ-HFq" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="yUd-rE-22p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home Page" id="hZO-co-zd8" colorLabel="IBBuiltInLabel-Yellow"/>
+                    <connections>
+                        <outlet property="Scroller" destination="rI6-kL-noS" id="Rrw-Ck-s3j"/>
+                        <outlet property="button" destination="VDu-hJ-HFq" id="7HD-4U-KE3"/>
+                        <outlet property="segmentedControl1" destination="21t-oK-YCC" id="APc-DR-2e1"/>
+                        <outlet property="switchButton" destination="hAe-9K-hr8" id="jF9-LY-z1d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1298" y="-710"/>
+        </scene>
+        <!--View Controller2 - Settings-->
+        <scene sceneID="x1u-w4-VdE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJA-gX-BL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="M1f-TL-Hgv" customClass="ViewController2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GQD-N1-a9M">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="zVj-sc-qli">
+                                <segments>
+                                    <segment title="Tilt"/>
+                                    <segment title="Roll"/>
+                                </segments>
+                                <connections>
+                                    <action selector="Settingspageselected:" destination="qJA-gX-BL0" eventType="valueChanged" id="Tzl-0v-BVU"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="21t-oK-YCC">
+                                <segments>
+                                    <segment title="Manual"/>
+                                    <segment title="Automatic"/>
+                                    <segment title="Eco"/>
+                                </segments>
+                                <connections>
+                                    <action selector="Settingspageselected:" destination="qJA-gX-BL0" eventType="valueChanged" id="dTX-yZ-S9A"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hAe-9K-hr8">
+                                <connections>
+                                    <action selector="Settingspageselected:" destination="qJA-gX-BL0" eventType="valueChanged" id="9ee-tc-Fe8"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="xRI-7m-WkA">
+                                <segments>
+                                    <segment title="Day"/>
+                                    <segment title="Night"/>
+                                </segments>
+                                <connections>
+                                    <action selector="Settingspageselected:" destination="qJA-gX-BL0" eventType="valueChanged" id="1GE-zU-tbP"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="8GF-DX-VMv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="fPa-WT-kYB"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Open"/>
+                                    <segment title="Close"/>
+                                </segments>
+                                <connections>
+                                    <action selector="TiltSegmentPressed:" destination="qJA-gX-BL0" eventType="valueChanged" id="8jB-3B-qLp"/>
+                                    <action selector="TiltSegmentPressed:" destination="M1f-TL-Hgv" eventType="valueChanged" id="xRC-jQ-uI6"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="bSl-PZ-gcT">
+                                <segments>
+                                    <segment title="Up"/>
+                                    <segment title="Down"/>
+                                </segments>
+                                <connections>
+                                    <action selector="RollSegmentPressed:" destination="M1f-TL-Hgv" eventType="valueChanged" id="0Tv-t4-7RI"/>
+                                    <action selector="RollSegmentPressed:" destination="qJA-gX-BL0" eventType="valueChanged" id="4Xs-wv-GXS"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="pJP-gV-Z5v">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="Ugv-Lr-d2m"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Roll Up"/>
+                                    <segment title="RD/TO"/>
+                                    <segment title="RD/TC"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="Auo-BA-lTv">
+                                <segments>
+                                    <segment title="Roll Up"/>
+                                    <segment title="RD/TO"/>
+                                    <segment title="RD/TC"/>
+                                </segments>
+                            </segmentedControl>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0Xv-XE-zLG"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO8-gG-yW0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hAe-9K-hr8" firstAttribute="centerY" secondItem="21t-oK-YCC" secondAttribute="centerY" type="default" id="2IX-Wx-qPA"/>
+                            <constraint firstItem="21t-oK-YCC" firstAttribute="top" secondItem="GQD-N1-a9M" secondAttribute="top" constant="21" id="7dR-1J-LN1"/>
+                            <constraint firstItem="pJP-gV-Z5v" firstAttribute="top" secondItem="MO8-gG-yW0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8xq-bY-Owp"/>
+                            <constraint firstItem="21t-oK-YCC" firstAttribute="trailing" secondItem="8GF-DX-VMv" secondAttribute="trailing" type="default" id="B6O-Mv-xwY"/>
+                            <constraint firstItem="pJP-gV-Z5v" firstAttribute="baseline" secondItem="bSl-PZ-gcT" secondAttribute="baseline" type="default" id="CSR-2I-jGk"/>
+                            <constraint firstItem="8GF-DX-VMv" firstAttribute="trailing" secondItem="bSl-PZ-gcT" secondAttribute="trailing" type="default" id="Cy6-Rx-Pg2"/>
+                            <constraint firstItem="xRI-7m-WkA" firstAttribute="top" secondItem="GQD-N1-a9M" secondAttribute="top" constant="135" id="EnU-o5-pro"/>
+                            <constraint firstItem="pJP-gV-Z5v" firstAttribute="top" secondItem="8GF-DX-VMv" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GKi-cg-Wyc"/>
+                            <constraint firstItem="Auo-BA-lTv" firstAttribute="top" secondItem="pJP-gV-Z5v" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Iob-2Q-y3D"/>
+                            <constraint firstAttribute="trailing" secondItem="hAe-9K-hr8" secondAttribute="trailing" constant="5" id="Mcw-hG-k9V"/>
+                            <constraint firstItem="xRI-7m-WkA" firstAttribute="trailing" secondItem="Auo-BA-lTv" secondAttribute="trailing" type="default" id="OHc-Rk-MQj"/>
+                            <constraint firstItem="MO8-gG-yW0" firstAttribute="centerX" secondItem="8GF-DX-VMv" secondAttribute="centerX" type="default" id="Xye-ZB-fch"/>
+                            <constraint firstItem="xRI-7m-WkA" firstAttribute="trailing" secondItem="zVj-sc-qli" secondAttribute="trailing" type="default" id="c7s-Py-cs4"/>
+                            <constraint firstItem="zVj-sc-qli" firstAttribute="leading" secondItem="GQD-N1-a9M" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="dTz-DE-gZZ"/>
+                            <constraint firstItem="0Xv-XE-zLG" firstAttribute="centerX" secondItem="MO8-gG-yW0" secondAttribute="centerX" type="default" id="hpJ-8x-dOR"/>
+                            <constraint firstItem="xRI-7m-WkA" firstAttribute="baseline" secondItem="zVj-sc-qli" secondAttribute="baseline" type="default" id="jIf-J0-AW9"/>
+                            <constraint firstItem="bSl-PZ-gcT" firstAttribute="centerX" secondItem="xRI-7m-WkA" secondAttribute="centerX" type="default" id="jv5-nO-OAj"/>
+                            <constraint firstItem="bSl-PZ-gcT" firstAttribute="top" secondItem="MO8-gG-yW0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oJo-tA-ehg"/>
+                            <constraint firstItem="zVj-sc-qli" firstAttribute="top" secondItem="GQD-N1-a9M" secondAttribute="top" constant="78" id="oak-xB-pzB"/>
+                            <constraint firstAttribute="trailing" secondItem="pJP-gV-Z5v" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="q9F-lH-YJS"/>
+                            <constraint firstItem="pJP-gV-Z5v" firstAttribute="centerX" secondItem="Auo-BA-lTv" secondAttribute="centerX" type="default" id="smf-PO-Y0d"/>
+                            <constraint firstItem="Auo-BA-lTv" firstAttribute="leading" secondItem="pJP-gV-Z5v" secondAttribute="leading" type="default" id="tpg-sB-LMj"/>
+                            <constraint firstItem="8GF-DX-VMv" firstAttribute="top" secondItem="GQD-N1-a9M" secondAttribute="top" constant="179" id="xTy-3Z-8JH"/>
+                            <constraint firstItem="xRI-7m-WkA" firstAttribute="leading" secondItem="GQD-N1-a9M" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zAG-ta-f22"/>
+                            <constraint firstAttribute="bottom" secondItem="0Xv-XE-zLG" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="zG0-z5-i3k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="PTW-Ip-2lW">
+                        <barButtonItem key="rightBarButtonItem" title="About" id="rj3-ea-kg9">
+                            <connections>
+                                <segue destination="Tqh-ej-teq" kind="push" id="Ajc-oY-b06"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityindicator" destination="0Xv-XE-zLG" id="mFw-z1-XHF"/>
+                        <outlet property="label" destination="MO8-gG-yW0" id="wM4-uG-1S9"/>
+                        <outlet property="segmentedControl1" destination="21t-oK-YCC" id="Jhc-B1-XBR"/>
+                        <outlet property="segmentedControl2" destination="zVj-sc-qli" id="q9c-0o-wNp"/>
+                        <outlet property="segmentedControl3" destination="xRI-7m-WkA" id="q9q-Jp-8gq"/>
+                        <outlet property="segmentedControl4" destination="8GF-DX-VMv" id="1dd-zd-ANL"/>
+                        <outlet property="segmentedControl5" destination="bSl-PZ-gcT" id="RHe-c3-t6S"/>
+                        <outlet property="segmentedControl6" destination="pJP-gV-Z5v" id="B9Y-C2-Qwk"/>
+                        <outlet property="segmentedControl7" destination="Auo-BA-lTv" id="zmk-mG-OHs"/>
+                        <outlet property="switchButton" destination="hAe-9K-hr8" id="cSm-Xh-MaL"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-847" y="-710"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VDf-CQ-Cgb">
+            <objects>
+                <viewController id="Tqh-ej-teq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mfw-LN-5XZ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sAE-bR-F7Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g26-Pr-H0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-483" y="-710"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2cI-oW-Yzz">
+            <objects>
+                <navigationController wantsFullScreenLayout="YES" hidesBottomBarWhenPushed="YES" id="0ER-Ft-Prm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bZH-pg-xhN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="Tb4-46-xMb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxX-Su-chH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1686" y="-710"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="Scroller" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="button" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ViewController2" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController2.h"/>
+            <relationships>
+                <relationship kind="action" name="RollSegmentPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="Settingspageselected:" candidateClass="UIButton"/>
+                <relationship kind="action" name="TiltSegmentPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="activityindicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="segmentedControl1" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="segmentedControl2" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="segmentedControl3" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="segmentedControl4" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="segmentedControl5" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="segmentedControl6" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="segmentedControl7" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="switchButton" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
