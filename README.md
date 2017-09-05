@@ -1,7 +1,7 @@
 # Solar-e-Blinds
 Project Description
 
-We designed and created a smartphone application to control the blinds from an iPhone.
+Designed and created a smartphone application to control the blinds from an iPhone.
 
 It has 3 modes of operation: Manual, Automatic and Eco.
 
